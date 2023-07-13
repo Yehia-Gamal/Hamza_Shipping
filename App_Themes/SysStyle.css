@@ -1,0 +1,96 @@
+﻿@font-face {
+    font-family: 'Tajawal';
+    src: url('Fnts/Tajawal-Medium.ttf') format('truetype');
+}
+.arabicfont {
+    font-family: Tajawal;
+}
+
+.mGrid {
+    width: 100% !important;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse !important;
+}
+
+    .mGrid td {
+        padding: 3px;
+        border: solid 1px #c1c1c1;
+        color: #717171;
+    }
+
+    .mGrid th {
+        padding: 4px 2px;
+        color: #fff;
+        /*background: #424242 url(grd_head.png) repeat-x top;*/
+        background: #0f0f10;
+        border-left: solid 1px #525252;
+        height: 40px;
+        font-size: medium;
+        text-align: center;
+    }
+
+    .mGrid .alt {
+        background: #fcfcfc url(grd_alt.png) repeat-x top;
+    }
+
+    .mGrid .pgr {
+        background: #0f0f10 repeat-x top;
+    }
+
+        .mGrid .pgr table {
+            margin: 5px 0;
+        }
+
+        .mGrid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #fff;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+            height:25px;
+            font-size:medium;
+        }
+
+        .mGrid .pgr a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .mGrid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+
+.grdfoter {
+    text-align: center;
+    background-color: #666;
+    font-size: large;
+    font-weight: bold;
+}
+
+@media print {
+    .ovrflow {
+        overflow: unset;
+    }
+
+    .printprocc {
+        color: #000000 !important;
+        /*font-weight:bold;*/
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .table thead tr td, .table tbody tr td {
+        color: #000000 !important;
+        /*font-weight: bold;*/
+        -webkit-print-color-adjust: exact;
+    }
+
+    .table thead tr th, .table tbody tr th {
+        color: #000000 !important;
+        /*font-weight: bold;*/
+        -webkit-print-color-adjust: exact;
+    }
+}
